@@ -84,7 +84,7 @@
 ## 系统架构图
 该图摘自原作者仓库
 
-![系统架构图](/Users/lizhongze/gocode/src/seckill/framework.png)
+![系统架构图](https://github.com/ZonzeeLi/SecKill/blob/master/framework.png)
 
 ## 项目初始化
 以下内容介绍项目依赖中的特殊说明，以及数据库和Etcd的使用工具。
