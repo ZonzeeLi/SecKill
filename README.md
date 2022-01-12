@@ -45,7 +45,7 @@
 ├─model           (数据库处理)
 ├─router          (路由层)
 ├─service         (服务层)
-└─setting	        (初始化)
+└─setting         (初始化)
 ```
 
 ```sk_layer(秒杀逻辑层)
