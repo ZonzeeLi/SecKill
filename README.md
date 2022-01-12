@@ -268,7 +268,7 @@ POST 127.0.0.1:8082/sec/kill 秒杀接入请求
 Header添加"AuthSign"和"Referer"，Referer为引用的URL，作者可能是在规划项目的时候想用这个获取URL，这里直接添加用户IP即可，如上面的json数据，则添加"127.0.0.1"，也就是和"source"对应，"AuthSign"由md5生成，生成例子在项目中附加代码generate.go中
 ```
 
-![Header](/Users/lizhongze/gocode/src/seckill/Header.png)
+![Header](https://github.com/ZonzeeLi/SecKill/blob/master/Header.png)
 
 #### 运行说明
 该配置文件中改动也不大，主要就是白名单部分补充允许请求通过的URL，这个地方的处理逻辑写的并不完整，该代码中的逻辑是判断请求的获取到的`Referer`是否在`refer_whitelist`中，如果在的话则用户检查通过。当然实际中不能把所有的URL都存起来，不过我并没有改动原作者的写法，可能是想让开发者自己补充处理逻辑，所以这个地方我理解是在部署的时候可能会使用代理来做。
