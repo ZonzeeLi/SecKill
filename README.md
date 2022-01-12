@@ -49,27 +49,27 @@
 ```
 
 ```sk_layer(秒杀逻辑层)
-├─config    	    (配置包)
+├─config          (配置包)
 ├─logic           (逻辑处理)
-├─service		      (服务层)
+├─service         (服务层)
 │  ├─srv_err      (错误处理)
 │  ├─srv_limit    (频率限制)
 │  ├─srv_product  (商品管理)
 │  ├─srv_redis    (redis队列读写及用户数据处理)
 │  └─srv_user     (用户购买历史记录)
-└─setting  	      (初始化)
+└─setting         (初始化)
 ```
 
 ```sk_proxy(秒杀接入层)
-├─config		      (配置包)
-├─controller	    (api)
-├─router		      (路由层)
-├─service		      (逻辑处理)
+├─config          (配置包)
+├─controller      (api)
+├─router          (路由层)
+├─service         (逻辑处理)
 │  ├─srv_err      (错误处理)
 │  ├─srv_limit    (黑名单限制、反作弊、频率限制)
 │  ├─srv_redis    (redis读写)
 │  └─srv_sec      (秒杀接口处理逻辑)
-└─setting		      (初始化)
+└─setting         (初始化)
 ```
 
 ## 主要功能
